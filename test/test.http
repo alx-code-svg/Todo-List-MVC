@@ -1,0 +1,15 @@
+﻿@test_HostAddress = https://localhost:7106
+
+GET {{test_HostAddress}}/api/products
+
+###
+
+POST {{test_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Prodotto",
+  "price": "10"
+}
+
+###
