@@ -13,33 +13,3 @@ Content-Type: application/json
 }
 
 ###
-
-
-
-GET {{test_HostAddress}}/api/todos
-
-###
-
-POST {{test_HostAddress}}/api/todos
-Content-Type: application/json
-
-{
-  "title": "fare la spesa"
-}
-
-###
-
-@id=0
-DELETE {{test_HostAddress}}/api/todos/1
-
-###
-
-PUT {{test_HostAddress}}/api/todos/1
-Content-Type: application/json
-
-{
-  "Title": "fatta la spesa!",
-  "isCompleted": true
-}
-
-###
